@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="resources/js/jquery-ui-1.13.1/jquery-ui.min.css">
     <link rel="stylesheet" href="resources/css/styles.css">
     <link rel="icon" type="image/png" href="resources/img/calendarioPrecios.png" />
-    <title>Tarifario 05-2023 | CPMS</title>
+    <title>Tarifario RD 71-2024 | CPMS</title>
 </head>
 
 <body>
@@ -29,7 +29,7 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <div class="cont-info-tarifario">
-                <h2>Tarifario Actual: 05-2023</h2>
+                <h2>RD: 71-2024-DIRSAPOL</h2>
                 <img src="resources/img/_EscudoSanidad.png" alt="">
             </div>
         </header>

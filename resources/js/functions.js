@@ -113,8 +113,8 @@ const crearFilasTabla = (tarifario) =>
   tarifario
     .map(
       (procedimiento, indice) =>
-        `<tr><td>${indice + 1}</td><td>${procedimiento.codigoCpms}</td><td>${
-          procedimiento.descripcion
+        `<tr><td>${indice + 1}</td><td>${procedimiento.cpms}</td><td>${
+          procedimiento.descripcion_cpms
         }</td><td>S/.${procedimiento.precio}</td></tr>`
     )
     .join("");
@@ -130,7 +130,7 @@ function renderTabla(tarifario) {
 }
 inputProcedimiento.addEventListener("keyup", (e) => {
   const nuevaTabla = tarifario.filter((procedimiento) =>
-    `${procedimiento.descripcion.toLowerCase()} ${procedimiento.codigoCpms.toLowerCase()}`.includes(
+    `${procedimiento.descripcion_cpms.toLowerCase()} ${procedimiento.cpms.toLowerCase()}`.includes(
       inputProcedimiento.value.toLowerCase()
     )
   );

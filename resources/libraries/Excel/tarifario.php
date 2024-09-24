@@ -24,8 +24,8 @@ if($nvl<=3)
 else
     {
         $tarifario = $objProcedimiento->CargarTarifarioDiferenciado($nvl);
-        $tittle= ($nvl==4)?'TARIFARIO DIFERENCIADO PARA LA CLÍNICA ODONTOLÓGICA PNP ANGAMOS':'TARIFARIO DIFERENCIADO PARA EL POLICLINICO PNP CHICLAYO';
-        $nameFile= ($nvl==4)?'TarifarioIpressAngamos':'TarifarioIpressChiclayo';
+        $tittle= ($nvl==4)?'TARIFARIO DIFERENCIADO PARA EL POLICLINICO PNP CHICLAYO':'TARIFARIO DIFERENCIADO PARA LA CLÍNICA ODONTOLÓGICA PNP ANGAMOS';
+        $nameFile= ($nvl==4)?'TarifarioIpressChiclayo':'TarifarioIpressAngamos';
     }   
     
 $tarifario = $tarifario->fetchAll(PDO::FETCH_OBJ);
