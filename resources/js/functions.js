@@ -79,6 +79,7 @@ window.addEventListener("load", async () => {
   const cargarUnidades = await postData(datos);
   const unidadesList = cargarUnidades.map((unidad) => unidad.nombreIpress);
   CargarAutocompletado(unidadesList, cargarUnidades);
+  console.log(unidadesList);
 });
 
 async function postData(data) {

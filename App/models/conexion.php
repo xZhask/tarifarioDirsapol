@@ -13,7 +13,7 @@ $pass = 'hcYz;tpXNb%R'; //root */
     //$usuario = 'odindeveloper_josue';
     //$pass = 'b(=-.[52yyfy';
     //$db = 'odindeveloper_dbcpms';
-    $cadena = "$manejador:host=$servidor;dbname=$db";
+    $cadena = "$manejador:host=$servidor;dbname=$db;charset=UTF8";
     $cnx = new PDO($cadena, $usuario, $pass);
     date_default_timezone_set('America/Lima');
 } catch (Exception $ex) {

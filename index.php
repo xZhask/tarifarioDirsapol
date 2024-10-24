@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/47b4aaa3bf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="resources/js/jquery-ui-1.13.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="resources/js/jquery-ui-1.14.0/jquery-ui.min.css">
     <link rel="stylesheet" href="resources/css/styles.css">
     <link rel="icon" type="image/png" href="resources/img/calendarioPrecios.png" />
     <title>Tarifario RD 71-2024 | CPMS</title>
@@ -61,8 +61,8 @@
         </div>
     </div>
 </body>
-<script language="javascript" src="resources/js/jquery-3.6.0.min.js"></script>
-<script language="javascript" src="resources/js/jquery-ui-1.13.1/jquery-ui.min.js"></script>
+<script language="javascript" src="resources/js/jquery-3.7.1.min.js"></script>
+<script language="javascript" src="resources/js/jquery-ui-1.14.0/jquery-ui.min.js"></script>
 <script language="javascript" src="resources/js/functions.js"></script>
 
 </html>

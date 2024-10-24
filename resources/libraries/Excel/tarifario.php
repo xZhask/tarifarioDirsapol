@@ -15,15 +15,15 @@ $nvl = $_GET['nvl'];
 $tittle='';
 $nameFile='';
 
+$tarifario = $objProcedimiento->CargarTarifario($nvl);
+
 if($nvl<=3)
     {
-        $tarifario = $objProcedimiento->CargarTarifario($nvl);
         $tittle = 'TARIFARIO PARA IPRESS DE NIVEL '.$nvl;
         $nameFile= 'TarifarioIpressNvl '.$nvl;
     }
 else
     {
-        $tarifario = $objProcedimiento->CargarTarifarioDiferenciado($nvl);
         $tittle= ($nvl==4)?'TARIFARIO DIFERENCIADO PARA EL POLICLINICO PNP CHICLAYO':'TARIFARIO DIFERENCIADO PARA LA CLÍNICA ODONTOLÓGICA PNP ANGAMOS';
         $nameFile= ($nvl==4)?'TarifarioIpressChiclayo':'TarifarioIpressAngamos';
     }   
@@ -93,9 +93,9 @@ $filaExcel = 3;
 $id = 1;
 foreach ($tarifario as $procedimiento) {
     $sheet->setCellValue('A' . $filaExcel, $id);
-    $sheet->setCellValue('B' . $filaExcel, $procedimiento->codigoCpms);
-    $sheet->setCellValue('C' . $filaExcel, $procedimiento->descripcion);
-    $sheet->setCellValue('D' . $filaExcel, $procedimiento->precio);
+    $sheet->setCellValue('B' . $filaExcel, $procedimiento->cpms);
+    $sheet->setCellValue('C' . $filaExcel, $procedimiento->descripcion_cpms);
+    $sheet->setCellValue('D' . $filaExcel, 'S/ '.$procedimiento->precio);
     $id++;
     $filaExcel++;
 }
